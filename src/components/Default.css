@@ -1,0 +1,462 @@
+@font-face {
+	font-family: Avenir;
+	src: url(../fonts/AvenirLTStd-Book.otf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Avenir;
+}
+
+.logoModal {
+	height: 50px;
+}
+
+.botonArchivo-wrapper {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.botonArchivo {
+	border: 2px solid #3a9cd6;
+	color: #3a9cd6;
+	background-color: white;
+	padding: 4px 15px;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.botonArchivo-wrapper input[type='file'] {
+	font-size: 50px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+
+.CalendarDay__selected,
+.CalendarDay__selected:active,
+.CalendarDay__selected:hover {
+	background-color: #fdba12;
+	border: 1px solid #fdba12;
+}
+
+.CalendarDay__selected_span {
+	background: rgb(254, 215, 119);
+	border: 1px solid #fdba12;
+	color: #fff;
+}
+.CalendarDay__selected_span:hover {
+	background: rgb(254, 215, 119);
+	border: 1px solid #bf8c0d;
+	color: #fff;
+}
+.DateInput_input__focused {
+	border-bottom: 2px solid #fdba12;
+}
+
+/*----------------------------------------------------------------
+COLORES
+
+NEGRO #231F20
+
+AZUL #3A9CD6
+AZUL HOVER #215B7C
+
+ROJO #EA4435
+ROJO HOVER #BF382B
+
+VERDE #79C254
+VERDE HOVER #55893B
+
+AMARILLO #FDBA12
+AMARILLO HOVER #BF8C0D
+
+/*----------------------------------------------------------------*/
+/* BOTONES Y HOVER */
+.botonAzul {
+	background: #3a9cd6;
+	color: white;
+	border: none;
+	font-weight: bold;
+}
+.botonAzul:hover {
+	background: #215b7c;
+	color: white;
+}
+.botonRojo {
+	background: #ea4435;
+	color: white;
+	border: none;
+	font-weight: bold;
+}
+.botonRojo:hover {
+	background: #bf382b;
+	color: white;
+}
+.botonVerde {
+	background: #79c254;
+	color: white;
+	border: none;
+	font-weight: bold;
+}
+.botonVerde:hover {
+	background: #55893b;
+	color: white;
+}
+.botonAmarillo {
+	background: #fdba12;
+	color: white;
+	border: none;
+	font-weight: bold;
+}
+.botonAmarillo:hover {
+	background: #bf8c0d;
+	color: white;
+}
+.botonRojo {
+	background: #ea4435;
+	color: white;
+	border: none;
+	font-weight: bold;
+}
+.botonRojo:hover {
+	background: #bf382b;
+	color: white;
+}
+.botonBlanco {
+	background: white;
+	color: #231f20;
+	border: none;
+	font-weight: bold;
+}
+.botonBlanco:hover {
+	background: #231f20;
+	color: white;
+}
+.botonNegro {
+	background: #231f20;
+	color: white;
+	border: none;
+	font-weight: bold;
+}
+.botonNegro:hover {
+	background: white;
+	color: #231f20;
+}
+.botonNegro2 {
+	background: #231f20;
+	color: white;
+	border: none;
+	font-weight: bold;
+}
+.botonNegro2:hover {
+	background: #363031;
+	color: white;
+}
+.botonGris {
+	background: grey;
+	color: white;
+	border: none;
+	font-weight: bold;
+}
+.botonGris:hover {
+	background: #231f20;
+	color: white;
+}
+/*FIN BOTONES Y HOVER */
+/*COLORES */
+.fondoAmarillo {
+	background: #fdba12;
+}
+.fondoAzul {
+	background: #3a9cd6;
+}
+.fondoRojo {
+	background: #ea4435;
+}
+.fondoVerde {
+	background: #79c254;
+}
+.fondoBlanco {
+	background: white;
+}
+.fondoNegro {
+	background: #231f20;
+}
+.fondoGris {
+	background: grey;
+}
+
+/*FIN COLORES */
+
+/* ALINEAR */
+.centro {
+	text-align: center;
+	align-items: center;
+}
+.izquierda {
+	text-align: left;
+	align-items: center;
+}
+.derecha {
+	text-align: right;
+	align-items: center;
+}
+/* FIN ALINEAR */
+
+/*COLOR DE LETRA */
+.amarillo {
+	color: #fdba12;
+}
+.azul {
+	color: #3a9cd6;
+}
+.rojo {
+	color: #ea4435;
+}
+.verde {
+	color: #79c254;
+}
+.blanco {
+	color: white;
+}
+.negro {
+	color: #231f20;
+}
+
+/*fin COLOR DE LETRA */
+
+/*TAMAÑO LETRA */
+.tmuychica {
+	font-size: 10px;
+}
+.tchica {
+	font-size: 13px;
+}
+.tmediana {
+	font-size: 16px;
+}
+.tgrande {
+	font-size: 20px;
+}
+.tmuygrande {
+	font-size: 25px;
+}
+.tenorme {
+	font-size: 35px;
+}
+/*fin TAMAÑO LETRA */
+/*FONT WEIGHT*/
+.wnormal {
+	font-weight: normal;
+}
+.wbold {
+	font-weight: bold;
+}
+.wbolder {
+	font-weight: bolder;
+}
+
+/*fin FONT WEIGHT*/
+
+/*LINEA SEPARADORA*/
+.lmuychica {
+	height: 1px;
+}
+.lchica {
+	height: 2px;
+}
+.lmediana {
+	height: 3px;
+}
+.lgrande {
+	height: 4px;
+}
+.lmuygrande {
+	height: 5px;
+}
+.lenorme {
+	height: 10px;
+}
+/*fin LINEA SEPARADORA*/
+/*PADDING*/
+.pmuychico {
+	padding: 2px;
+}
+.pchico {
+	padding: 5px;
+}
+.pmediano {
+	padding: 10px;
+}
+.pgrande {
+	padding: 15px;
+}
+.pmuygrande {
+	padding: 20px;
+}
+.penorme {
+	padding: 30px;
+}
+/*paddding arriba*/
+.parmuychico {
+	padding-top: 5px;
+}
+.parchico {
+	padding-top: 10px;
+}
+.parmediano {
+	padding-top: 15px;
+}
+.pargrande {
+	padding-top: 20px;
+}
+.parmuygrande {
+	padding-top: 25px;
+}
+.parenorme {
+	padding-top: 30px;
+}
+/*paddding abajo*/
+.pabmuychico {
+	padding-bottom: 5px;
+}
+.pabchico {
+	padding-bottom: 10px;
+}
+.pabmediano {
+	padding-bottom: 15px;
+}
+.pabgrande {
+	padding-bottom: 20px;
+}
+.pabmuygrande {
+	padding-bottom: 25px;
+}
+.pabenorme {
+	padding-bottom: 30px;
+}
+/*paddding izquierda*/
+.pizmuychico {
+	padding-left: 5px;
+}
+.pizchico {
+	padding-left: 10px;
+}
+.pizmediano {
+	padding-left: 15px;
+}
+.pizgrande {
+	padding-left: 20px;
+}
+.pizmuygrande {
+	padding-left: 25px;
+}
+.pizenorme {
+	padding-left: 30px;
+}
+/*paddding derecha*/
+.pdemuychico {
+	padding-right: 5px;
+}
+.pdechico {
+	padding-right: 10px;
+}
+.pdemediano {
+	padding-right: 15px;
+}
+.pdegrande {
+	padding-right: 20px;
+}
+.pdemuygrande {
+	padding-right: 25px;
+}
+.pdeenorme {
+	padding-right: 30px;
+}
+/*fin PADDING*/
+/*SIN PADDING NI MARGIN*/
+.sinpym {
+	padding: 0px;
+	margin: 0px;
+}
+/*fin SIN PADDING NI MARGIN*/
+/*SIN formato LINK*/
+.linkBlanco a {
+	color: white;
+	text-decoration: none;
+}
+.linkBlanco a:hover {
+	color: grey;
+	text-decoration: none;
+}
+
+.linkNegro a {
+	color: #231f20;
+	text-decoration: none;
+}
+.linkNegro a:hover {
+	color: grey;
+	text-decoration: none;
+}
+
+.linkAmarillo a {
+	color: #fdba12;
+	text-decoration: none;
+}
+.linkAmarillo a:hover {
+	color: #bf8c0d;
+	text-decoration: none;
+}
+
+.linkAzul a {
+	color: #3a9cd6;
+	text-decoration: none;
+}
+.linkAzul a:hover {
+	color: #215b7c;
+	text-decoration: none;
+}
+
+.linkRojo a {
+	color: #ea4435;
+	text-decoration: none;
+}
+.linkRojo a:hover {
+	color: #bf382b;
+	text-decoration: none;
+}
+
+.linkVerde a {
+	color: #79c254;
+	text-decoration: none;
+}
+.linkVerde a:hover {
+	color: #55893b;
+	text-decoration: none;
+}
+
+/*fin SIN formato LINK*/
+
+/*----------------------------------------------------------------
+COLORES
+
+NEGRO #231F20
+
+AZUL #3A9CD6
+AZUL HOVER #215B7C
+
+ROJO #EA4435
+ROJO HOVER #BF382B
+
+VERDE #79C254
+VERDE HOVER #55893B
+
+AMARILLO #FDBA12
+AMARILLO HOVER #BF8C0D
+
+/*----------------------------------------------------------------*/

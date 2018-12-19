@@ -1,26 +1,36 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Container, Col, Row } from 'reactstrap';
+import Inicio from './components/Inicio';
+import Navbar from './components/Navbar';
 import './App.css';
+import { slide as Menu } from 'react-burger-menu';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Hello Cartoonds
-          </a>
-        </header>
-      </div>
+      <BrowserRouter>
+        <Switch>
+          <Navbar />
+          <Container fluid>
+            <Row>
+              <Col xs={{ size: 6, offset: 3 }}>
+                <p className="text-center text-white font-weight-bold h1 mt-2">
+                  Encuesta
+                </p>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={{ size: 10, offset: 1 }}>
+                <Switch>
+                  <Route exact path={'/'} component={Inicio} />
+                </Switch>
+              </Col>
+            </Row>
+          </Container>
+        </Switch>
+      </BrowserRouter>
     );
   }
 }
