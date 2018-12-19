@@ -8,9 +8,93 @@ body {
 	padding: 0;
 	font-family: Avenir;
 }
+.dishover:hover {
+	background-color: white !important;
+	border-color: none !important;
+	cursor: default !important;
+}
+
+.breadcrumb {
+	background-color: unset !important;
+	padding: unset !important;
+	margin-bottom: 0 !important;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+	position: fixed;
+	width: 36px;
+	height: 30px;
+	left: 36px;
+	top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+	background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+	height: 24px;
+	width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+	background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+	background: #373a47;
+	padding: 2.5em 1.5em 0;
+	font-size: 1.25em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+	fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+	color: #b8b7ad;
+	padding: 0.8em;
+	line-height: 3;
+	height: unset !important;
+}
+
+/* Individual item */
+.bm-item {
+	display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.link-sidebar {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.link-sidebar:hover {
+	text-decoration: none;
+	color: lightblue;
+}
+
+.editorcol .ql-editor {
+	min-height: 20em;
+}
 
 .logoModal {
 	height: 50px;
+}
+.tamanoLogo {
+	height: 150px;
 }
 
 .botonArchivo-wrapper {

@@ -11,17 +11,21 @@ import {
   FaLock
 } from 'react-icons/fa';
 import Inicio from './Inicio';
+import Logo from '../imgs/Logo.png';
 
 export default props => {
   return (
     <React.Fragment>
-      {((props.error && props.error.statusCode === 401) ||
-        props.token === null) && <Redirect to="/login" />}
+      <div className="centro">
+        <img src={Logo} className="tamanoLogo" />
+      </div>
       <Menu>
         <p className="tenorme">Encuesta</p>
-        <Link className="link-sidebar mb-2" to={'/'}>
-          <FaHome /> Inicio
-        </Link>
+        <div className="bm-item-list">
+          <Link className="link-sidebar mb-2" to={'/'}>
+            <FaHome /> Inicio
+          </Link>
+        </div>
       </Menu>
     </React.Fragment>
   );

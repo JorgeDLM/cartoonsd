@@ -12,23 +12,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Navbar />
-          <Container fluid>
-            <Row>
-              <Col xs={{ size: 6, offset: 3 }}>
-                <p className="text-center text-white font-weight-bold h1 mt-2">
-                  Encuesta
-                </p>
-              </Col>
-            </Row>
-            <Row>
-              <Col xs={{ size: 10, offset: 1 }}>
-                <Switch>
-                  <Route exact path={'/'} component={Inicio} />
-                </Switch>
-              </Col>
-            </Row>
-          </Container>
+          <Route exact path={'/'} component={Inicio} />
         </Switch>
       </BrowserRouter>
     );
