@@ -8,6 +8,54 @@ body {
 	padding: 0;
 	font-family: Avenir;
 }
+/*----------------------------------------------------------------
+COLORES
+
+NEGRO #231F20
+
+AZUL #3A9CD6
+
+ROJO #EA4435
+
+VERDE #79C254
+
+AMARILLO #FDBA12
+
+MORADO #373a47
+
+/*----------------------------------------------------------------*/
+
+.logoFooter {
+	height: 45px;
+}
+
+.footer {
+	position: absolute;
+	margin-top: -150px; /* negative value of footer height */
+	height: 120px;
+	clear: both;
+	width: 100%;
+	padding-top: 20px;
+	bottom: 0;
+}
+.borderar {
+	border-top: 0.1px solid #bcbec0;
+}
+.claseBotonFooter {
+	text-align: center;
+	width: 42px;
+	height: 42px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 4px;
+	padding-right: 4px;
+	border-radius: 5px;
+}
+
+.paddingmini {
+	padding-right: 2px;
+}
+
 .dishover:hover {
 	background-color: white !important;
 	border-color: none !important;
@@ -22,11 +70,11 @@ body {
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-	position: fixed;
+	position: relative;
 	width: 36px;
 	height: 30px;
 	left: 36px;
-	top: 36px;
+	top: 60px;
 }
 
 /* Color/shape of burger icon bars */
@@ -60,7 +108,7 @@ body {
 /* Wrapper for item list */
 .bm-item-list {
 	color: #b8b7ad;
-	padding: 0.8em;
+	padding: 0.25em;
 	line-height: 3;
 	height: unset !important;
 }
@@ -94,7 +142,8 @@ body {
 	height: 50px;
 }
 .tamanoLogo {
-	height: 150px;
+	height: 120px;
+	padding-top: 0px;
 }
 
 .botonArchivo-wrapper {
@@ -201,6 +250,16 @@ AMARILLO HOVER #BF8C0D
 	background: #bf8c0d;
 	color: white;
 }
+.botonMorado {
+	background: #373a47;
+	color: white;
+	border: none;
+	font-weight: bold;
+}
+.botonMorado:hover {
+	background: #6f7590;
+	color: white;
+}
 .botonRojo {
 	background: #ea4435;
 	color: white;
@@ -256,6 +315,9 @@ AMARILLO HOVER #BF8C0D
 .fondoAmarillo {
 	background: #fdba12;
 }
+.fondoMorado {
+	background: #373a47;
+}
 .fondoAzul {
 	background: #3a9cd6;
 }
@@ -295,6 +357,9 @@ AMARILLO HOVER #BF8C0D
 /*COLOR DE LETRA */
 .amarillo {
 	color: #fdba12;
+}
+.morado {
+	color: #373a47;
 }
 .azul {
 	color: #3a9cd6;
@@ -494,6 +559,14 @@ AMARILLO HOVER #BF8C0D
 }
 .linkAmarillo a:hover {
 	color: #bf8c0d;
+	text-decoration: none;
+}
+.linkMorado a {
+	color: #373a47;
+	text-decoration: none;
+}
+.linkMorado a:hover {
+	color: #646982;
 	text-decoration: none;
 }
 
