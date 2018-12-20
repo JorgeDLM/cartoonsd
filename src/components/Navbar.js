@@ -6,9 +6,9 @@ import {
   FaComment,
   FaHome,
   FaPoll,
-  FaCheckSquare,
+  FaHandPointRight,
   FaSignOutAlt,
-  FaLock
+  FaPenAlt
 } from 'react-icons/fa';
 import Inicio from './Inicio';
 import Logo from '../imgs/Logo3.png';
@@ -25,22 +25,22 @@ export default props => {
             </Link>
           </div>
           <div className="bm-item-list">
-            <Link className="link-sidebar" to={'/'}>
-              <FaHome /> Productos
+            <Link className="link-sidebar" to={'/productos'}>
+              <FaHandPointRight /> Productos
             </Link>
           </div>
           <div className="bm-item-list">
-            <Link className="link-sidebar" to={'/'}>
-              <FaHome /> ¿Quiénes somos?
+            <Link className="link-sidebar" to={'/quienes-somos'}>
+              <FaPenAlt /> ¿Quiénes somos?
             </Link>
           </div>
         </Menu>
         <div className="d-block d-sm-none pizenorme">
-          <div className="pizenorme centro">
+          <div className="pabchico pizenorme centro">
             <img src={Logo} className="tamanoLogo" />
           </div>
         </div>
-        <div className="d-none d-sm-block centro">
+        <div className="pabchico d-none d-sm-block centro">
           <img src={Logo} className="tamanoLogo" />
         </div>
       </div>
